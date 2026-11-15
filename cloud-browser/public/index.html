@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Cloud Browser</title>
+<link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+<div id="app">
+  <div id="toolbar">
+    <button class="nav" id="back" title="Back">
+      <svg viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7" /></svg>
+    </button>
+    <button class="nav" id="fwd" title="Forward">
+      <svg viewBox="0 0 24 24"><path d="M9 5l7 7-7 7" /></svg>
+    </button>
+    <button class="nav" id="reload" title="Reload">
+      <svg viewBox="0 0 24 24"><path d="M20 11a8 8 0 10-2.3 5.7M20 5v6h-6" /></svg>
+    </button>
+    <form id="omni">
+      <input id="url" type="text" placeholder="Search or enter address" spellcheck="false" autocomplete="off" />
+      <button id="go" type="submit" title="Go">↵</button>
+    </form>
+    <span id="status"></span>
+  </div>
+
+  <div id="stage">
+    <canvas id="screen" width="1280" height="800"></canvas>
+
+    <div id="start">
+      <div class="start-inner">
+        <h1>Cloud Browser</h1>
+        <p>A real Chrome, running on the server and streamed here.<br />
+           Every site works — logins, video, banking, JavaScript apps.</p>
+        <button id="connect">Start browsing</button>
+        <p class="hint" id="hint">Takes a few seconds to boot Chrome.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="/app.js" type="module"></script>
+</body>
+</html>

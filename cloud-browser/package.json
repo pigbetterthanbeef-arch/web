@@ -1,0 +1,13 @@
+{
+  "name": "cloud-browser",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "A real Chrome running on the server, streamed into a web page.",
+  "scripts": { "start": "node server.mjs" },
+  "engines": { "node": ">=18" },
+  "dependencies": {
+    "playwright": "1.49.0",
+    "ws": "^8.18.0"
+  }
+}
